@@ -10,12 +10,12 @@ int main()
         printf("Error.\n");
         exit(1);
     }
-    if (pid!=0)
+    if (pid==0)
     {
         pid1=getpid();
         printf("Child process  %d.\n",pid1);
     }
-    if (pid==0)
+    if (pid!=0)
     {
         pid2=getpid();
         printf("Parent process  %d.\n",pid2);
